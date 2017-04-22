@@ -11,6 +11,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Home.css';
+import RequestCard from '../../components/RequestCard'
+import RequestInProgress from '../../components/RequestInProgress'
+import Navigation from '../../components/Navigation'
 
 class Home extends React.Component {
   static propTypes = {
@@ -24,9 +27,38 @@ class Home extends React.Component {
   render() {
     return (
       <div className={s.root}>
+        <Navigation />
+        <link rel="stylesheet" type="text/css" href="./Home.css" />
         <div className={s.container}>
-          <h1>React.js News</h1>
-          {this.props.news.map(item => (
+          <div className="row">
+          
+          <div className="col-sm-3">
+            <div className={s.spacer}></div>
+            <div className={s.spacer}></div>
+            <h4 className={s.centerText}>Suggestions</h4>
+            <RequestCard/>
+            <RequestCard/>
+          </div>
+          <div className="col-sm-1"></div>
+
+          <div className="col-sm-8">
+            <h2 className={s.centerText}>Upcoming</h2>
+            <RequestInProgress/>
+            <div className={s.spacer}></div>
+            <RequestInProgress/>
+          </div>
+          </div>
+          
+        </div>
+      </div>
+    );
+  }
+}
+
+export default withStyles(s)(Home);
+
+/*
+{this.props.news.map(item => (
             <article key={item.link} className={s.newsItem}>
               <h1 className={s.newsTitle}><a href={item.link}>{item.title}</a></h1>
               <div
@@ -36,10 +68,4 @@ class Home extends React.Component {
               />
             </article>
           ))}
-        </div>
-      </div>
-    );
-  }
-}
-
-export default withStyles(s)(Home);
+*/

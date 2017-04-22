@@ -8,19 +8,19 @@
  */
 
 import React from 'react';
+import CreateNew from './CreateNew';
+import fetch from '../../core/fetch';
 import Layout from '../../components/Layout';
-import Contact from './Contact';
-
-const title = 'Contact Us';
 
 export default {
 
-  path: '/contact',
+  path: '/createnew',
 
-  action() {
+  async action() {
     return {
-      title,
-      component: <Layout><Contact title={title} /></Layout>,
+      title: "Create New",
+      chunk: 'createnew',
+      component: <Layout><CreateNew/></Layout>,
     };
   },
 

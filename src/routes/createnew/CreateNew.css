@@ -10,8 +10,9 @@
 @import '../../components/variables.css';
 
 .root {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: #048FE2;
 }
 
 .container {
@@ -56,4 +57,10 @@
   img {
     max-width: 100%;
   }
+}
+
+.background{
+  background-color:#048FE2;
+  padding: 10px 10px;
+
 }

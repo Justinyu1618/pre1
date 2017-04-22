@@ -14,23 +14,38 @@ import Link from '../Link';
 import Navigation from '../Navigation';
 import logoUrl from './logo-small.png';
 import logoUrl2x from './logo-small@2x.png';
+import {Navbar, FormGroup, FormControl, Button} from 'react-bootstrap/lib/'
 
 class Header extends React.Component {
   render() {
     return (
+      <div>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+      <link rel="stylesheet" type="text/css" href="./Header.css" />
+      
       <div className={s.root}>
         <div className={s.container}>
-          <Navigation />
-          <Link className={s.brand} to="/">
-            <img src={logoUrl} srcSet={`${logoUrl2x} 2x`} width="38" height="38" alt="React" />
-            <span className={s.brandTxt}>Your Company</span>
-          </Link>
           <div className={s.banner}>
-            <h1 className={s.bannerTitle}>React</h1>
-            <p className={s.bannerDesc}>Complex web apps made easy</p>
+            
+             <div className='row'>
+             <span> <h1 className={s.bannerTitle}>PRE</h1></span>
+             <span><Button className=" createnew btn btn-primary pull-right" bsStyle="primary">Create New</Button></span>
+             
+             </div>
+              <br style={{marginBottom:20}}/>
+
           </div>
+          <div className={s.root} role="navigation">
+        
+      </div>
+          
         </div>
       </div>
+      
+      
+
+      
+</div>
     );
   }
 }
