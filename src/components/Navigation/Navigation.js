@@ -50,6 +50,7 @@ class Navigation extends React.Component {
           <Nav pullRight>
             <NavItem href='/login'>Log In</NavItem>
             <NavItem href='/register'>Sign Up</NavItem>
+            <div className={s.spacer}></div>
           </Nav>
         </Navbar>
       </div>

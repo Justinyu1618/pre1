@@ -27,7 +27,7 @@ class Home extends React.Component {
   render() {
     return (
       <div className={s.root}>
-        <Navigation />
+        
         <link rel="stylesheet" type="text/css" href="./Home.css" />
         <div className={s.container}>
           <div className="row">
@@ -37,6 +37,7 @@ class Home extends React.Component {
             <div className={s.spacer}></div>
             <h4 className={s.centerText}>Suggestions</h4>
             <RequestCard/>
+            <br/> <br/>
             <RequestCard/>
           </div>
           <div className="col-sm-1"></div>

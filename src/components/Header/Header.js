@@ -35,10 +35,10 @@ class Header extends React.Component {
               <br style={{marginBottom:20}}/>
 
           </div>
-          <div className={s.root} role="navigation">
-        
-      </div>
-          
+          <div className={s.container} role="navigation">
+          <Navigation />
+        </div>
+           
         </div>
       </div>
       

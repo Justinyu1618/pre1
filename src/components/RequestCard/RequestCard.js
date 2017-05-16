@@ -15,11 +15,11 @@ class RequestCard extends React.Component {
   render() {
     return (
       <div>
-      <link rel="stylesheet" href="./RequestCard.css" />
+      <link rel="stylesheet" type="text/css" href="./src/components/RequestCard/RequestCard.css" />
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
       
                     
-    			<div className="card thumbnail ">
+    			<div className={s.preRequestCard}>
               <p className={s.cardtopbar} >
                 Project Name	    		
 	  	        </p>
@@ -31,7 +31,7 @@ class RequestCard extends React.Component {
               <span className="glyphicon glyphicon-calendar"></span>{"   "}<span>4/20/17</span>
               <span className="pull-right"><span className="glyphicon glyphicon-hourglass"></span>{"   "}<span>4/20/17</span></span>
               </p>
-			        <p><a  className="btn btn-primary center-block" role="button">Find Out More</a></p>
+			        <p><a  className="btn btn-primary center-block btnsize" role="button" >Find Out More</a></p>
 		     		  </div>
 	    		</div>
 	  	</div>

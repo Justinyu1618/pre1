@@ -39,9 +39,17 @@
   padding-left: 15px;
 }
 
-.card{
+/*
+.#app > div > div.Home-root-fisf4 > div.Home-container-1yZ9z > div > div.col-sm-3 > div:nth-child(4) > div {
+   color: red;
   width: 500px;
   height: 400px;
+
+}*/
+
+.preRequestCard{
+
+
 
 }
 
@@ -52,6 +60,11 @@
 }
 
 .requesttitle{
-  
 
+
+}
+
+.btnsize{
+  width: 5000px;
+  height: 100px;
 }
